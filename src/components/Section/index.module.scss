@@ -1,0 +1,15 @@
+.section {
+    padding: 2.2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .section {
+        padding: 1rem;
+    }
+}
+

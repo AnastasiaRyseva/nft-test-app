@@ -1,0 +1,38 @@
+.button {
+    background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+    padding: 1.2em 1.8em;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #242424;
+    border: none;
+    border-radius: 1.2rem;
+    box-shadow:0 0 10px rgba(29, 216, 68, 1);
+    margin-top: 3.7rem;
+    position: relative;
+    z-index: 5;
+
+    &:hover {
+        box-shadow:0 0 20px rgba(29, 216, 68, 1);
+    }
+    &:active {
+        background-color: rgba(224, 255, 172, 0.05);
+    
+    }
+
+    &:disabled {
+        color:  rgba(36, 36, 36, 0.5);
+        box-shadow: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .button {
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .button {
+        width: 100%;
+    }
+}

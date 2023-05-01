@@ -1,0 +1,17 @@
+.contentWrapper {
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 150px;
+}
+
+@media only screen and (max-width: 800px) {
+    .contentWrapper {
+        max-width: 100%;
+        gap: 35px;
+    }
+}
+

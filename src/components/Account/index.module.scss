@@ -1,0 +1,31 @@
+.buttonAccount {
+    background: transparent;
+    padding: 0.9em 1.2em;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    margin-right: 3rem;
+
+    &:hover {
+        color: #C3F33B;
+        border: 1px solid #C3F33B;
+    }
+    &active {
+        background-color: rgba(224, 255, 172, 0.05);
+        backdrop-filter: blur(7.5px);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .buttonAccount {
+        margin-right: 0;
+    }
+}

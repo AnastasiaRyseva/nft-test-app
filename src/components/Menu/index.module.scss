@@ -1,0 +1,80 @@
+.menu {
+    display: flex;
+    gap: 105px;
+    align-items: center;
+
+    &Item {
+        &_Link {
+            color:#CECECE;
+            font-size: 1.3rem;
+            text-decoration: none;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50%;
+    margin-bottom: 54px;
+}
+.hiddenLogo {
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    .menu {
+        gap: 1.2rem;
+    }
+    .menuItem_Link {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: flex-start;
+        margin-top: 3.4rem;
+        &Item {
+            &_btn {
+            margin-top: 4.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+    }
+    .wrapper {
+        display: none;
+    }
+    .wrapperActive {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        backdrop-filter: blur(2px);
+        z-index: 100;
+        top: 0;
+        right: -1rem;
+    }
+    .content {
+        transform: translateX(-100%);
+        transition: all 0.4s;
+    }
+    .wrapperActive > .content{
+        width: 96vw;
+        transform: translateX(0);
+        background-color: #293344;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-left: 1.5rem;
+        padding-top: 1.7rem;
+        border-radius: 30px;
+    }
+    
+}
+
+
