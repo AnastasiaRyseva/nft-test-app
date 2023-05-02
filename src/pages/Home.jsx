@@ -10,7 +10,6 @@ import {
     Grid,
     DecorEllipse,
     Logo,
-    Account,
     Burger,
     Image
   } from "../components"
@@ -18,8 +17,7 @@ import {
 const Home = () => {
   const [menuActive, setMenuActive] = useState(false)
   return (
-    <div>
-    
+    <>
       <Section>
       <DecorEllipse left={0} />
         <Header>
@@ -40,7 +38,7 @@ const Home = () => {
         <Image src={ManPicture} alt={'man'}/>
         </Grid>
       </Section>
-    </div>
+    </>
   )
 }
 

@@ -12,13 +12,14 @@ const Card = ({
       <div
         className={cl(className, style.card)}
       >
-        <div className={style.cardSmile}>
-          <img src={src}/>
+          <div className={style.cardSmile}>
+            <img src={src}/>
+          </div>
+          <Title type={'small'}>
+            {text}
+          </Title>
+          <div className={style.cardShadow} />
         </div>
-        <Title type={'small'}>
-          {text}
-        </Title>
-      </div>
     )
 
 }

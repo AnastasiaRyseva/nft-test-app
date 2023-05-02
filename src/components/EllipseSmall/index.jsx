@@ -12,7 +12,8 @@ const EllipseSmall = ({
     left = null,
     right = null,
     bottom = null,
-    src
+    src,
+    width
   }) => {
     const stylesParams = {};
     if (top !== null) {
@@ -27,12 +28,10 @@ const EllipseSmall = ({
     if (bottom !== null) {
       stylesParams.bottom = bottom;
     }
-
+    stylesParams.width = width
     return (
       <img className={style.ellipseSmall} style={{...stylesParams}} src={src}/>
     )
-    
-
 }
 
 export default EllipseSmall

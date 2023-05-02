@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 import cl from 'classnames'
 import style from './index.module.scss'
 import Account from '../Account';
-import Logo from '../Logo';
-import logo from '../../Logo_nft.svg';
-import Burger from '../Burger';
-
 
 const Menu = ({
     className,
