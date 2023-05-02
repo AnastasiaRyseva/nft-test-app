@@ -31,6 +31,8 @@ const Cover = ({
       <Modal
         isOpen={isOpenModal}
         closeModal={() => setIsOpenModal(false)}
+        title={'Начни прямо сейчас!'}
+        text={'Получи все нужные навыки для заработка на NFT всего за 28 дней!'}
       >
 
       </Modal>

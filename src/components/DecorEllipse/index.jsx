@@ -2,13 +2,8 @@ import React from 'react'
 import style from './index.module.scss'
 import cl from 'classnames'
 
-/**
- * 
- * @param {position} left | right 
- * @returns 
- */
+
 const DecorEllipse = ({
-    position,
     top = null,
     left = null,
     right = null,

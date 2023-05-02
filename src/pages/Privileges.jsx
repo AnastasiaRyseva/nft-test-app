@@ -39,12 +39,12 @@ const Privileges = () => {
   let blueEllipseWidth = isMobile? "21px" : "84px";
   let blueEllipseTop = isMobile? "136px" : "90px";
   let blueEllipseLeft = isMobile? "10px" : "200px";
-
+  let paddingTop = isMobile? "2.2rem" : "6.2rem";
 
 
   return (
     <div className='privileges' ref={ref}>
-      <Section paddingTop="6.2rem">
+      <Section paddingTop={paddingTop}>
         <DecorEllipse right={0} />
         <DecorEllipse left={0} bottom={'80px'} />
         <EllipseSmall left={blueEllipseLeft} top={blueEllipseTop}src={ellipse} width={blueEllipseWidth}/>
