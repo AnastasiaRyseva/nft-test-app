@@ -105,8 +105,10 @@
     }
 }
 @media only screen and (max-width: 440px) {
-    .modalClose {
-        top: 1rem;
-        right: 1rem;
-    }
+    .modal {
+        &Close {
+            top: 1rem;
+            right: 1rem;
+        }
+    } 
 }
